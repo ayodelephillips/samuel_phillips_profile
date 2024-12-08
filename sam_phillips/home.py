@@ -1,10 +1,11 @@
 import streamlit as st
+from utility import ProfileConfig
 
 # Set page title
 st.title("About Me")
 
 # Add a section for the user's photo
-st.image("assets/img/linkedin_pic.jpg", width=350, )  # Replace with your photo URL or local path
+st.image(ProfileConfig().sam_profile_image, width=350, )  # Replace with your photo URL or local path
 
 
 # Career Summary
@@ -28,9 +29,9 @@ st.write("""
 
 # Add LinkedIn and GitHub links
 st.markdown("### Find Me Online")
-st.markdown("""
-- [GitHub Profile](https://github.com/ayodelephillips)  
-- [LinkedIn Profile](https://www.linkedin.com/in/samuel-phillips-dev)
+st.markdown(f"""
+- [GitHub Profile]({ProfileConfig().github_profile})  
+- [LinkedIn Profile]({ProfileConfig().linkedin_profile})
 """)
 
 # Career Evolution showing the migration from software engineering to data engineering and now AI/Machine Learning.
@@ -44,10 +45,10 @@ st.markdown(
 
 # Resume download section
 st.markdown("### Download My Resume")
-with open("assets/file/samuel_phillips_resume.docx", "rb") as file:
+with open(ProfileConfig().resume_location, "rb") as file:
     st.download_button(
         label="Download Resume",
         data=file,
-        file_name="samuel_phillips_resume.docx",
+        file_name=ProfileConfig().resume_file_name,
         mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     )
