@@ -1,11 +1,12 @@
 import streamlit as st
 from utility import ProfileConfig
+from pathlib import Path
 
 # Set page title
 st.title("About Me")
 
 # Add a section for the user's photo
-st.image(ProfileConfig().sam_profile_image, width=350, )  # Replace with your photo URL or local path
+st.image(f"{Path(__file__).resolve().parent}/assets/img/linkedin_pic.jpg", width=350, )  # Replace with your photo URL or local path
 
 
 # Career Summary
