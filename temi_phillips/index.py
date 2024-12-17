@@ -6,6 +6,6 @@ skills_and_tools = st.Page("skills_and_tools.py", title='Tools and relevant skil
 
 pg = st.navigation([home_page, skills_and_tools, projects_page])
 
-st.set_page_config(page_title="Meet Temiloluwa Phillips[formerly Temiloluwa Adeyanju]", page_icon=":material/edit:")
+st.set_page_config(page_title="Meet Temiloluwa Phillips", page_icon=":material/edit:")
 
 pg.run()
