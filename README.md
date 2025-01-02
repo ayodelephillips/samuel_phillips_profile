@@ -1,1 +1,1 @@
-To launch run 'streamlit runtemi_phillips/index.py'
+To launch run 'streamlit run temi_phillips/index.py'
