@@ -54,7 +54,13 @@ data analysis, and software tools like Xero and Excel. These projects reflect my
 # Display each project in styled containers
 for project, detail in project_done.items():
     with st.container():
-        st.markdown(f"<div class='project-container'><h2>{project}</h2><p>{detail}</p></div>", unsafe_allow_html=True)
+        st.markdown(f"""
+                    <div class='project-container'>
+                    <h2>{project}</h2>
+                    <p>{detail}</p>
+                    </div>
+                    """, 
+                    unsafe_allow_html=True)
         st.markdown("<div class='divider'></div>", unsafe_allow_html=True)
 
 # Add a footer
