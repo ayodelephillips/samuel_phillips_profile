@@ -39,7 +39,7 @@ st.markdown("""
 
 # Page title and introduction
 st.markdown("<h1 class='header-title'>Welcome to My Portfolio</h1>", unsafe_allow_html=True)
-st.write("Hi there! I’m an ** Assistant Management Accountant** with a passion for providing impactful financial insights, improving processes, and driving business growth.")
+st.write("Hi there! I’m an **Assistant Management Accountant** with a passion for providing impactful financial insights, improving processes, and driving business growth.")
 
 
 st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
